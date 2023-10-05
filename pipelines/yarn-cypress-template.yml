@@ -1,0 +1,13 @@
+.yarn_cache_template:
+  cache:
+    untracked: true
+    key: ${CI_COMMIT_SHA}
+    paths:
+      - yarn.lock
+      - node_modules/
+    policy: pull
+
+.cypress_template:
+  image: cypress/included:12.8.1
+  tags:
+    - chateau

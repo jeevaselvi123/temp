@@ -18,8 +18,13 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "src/*": ["./src/*"],
+      "test/*": ["./test/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "emailReport.js", "jest.config.js", "scripts/generateCypressPipeline.js"],
+  "exclude": ["node_modules", "cypress", "cypress.config.ts"]
 }
